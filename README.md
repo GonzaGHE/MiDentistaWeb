@@ -2,25 +2,30 @@
 
 Bienvenido a tu proyecto de sitio web para clínica dental. Este repositorio contiene todo el código necesario para desplegar una página web profesional, moderna y gratuita.
 
-## 📋 Plan de Trabajo (Kanban)
+## 📸 Guía de Activos Multimedia (Checklist de Fotos)
 
-Usa esta lista como tu tablero Kanban personal para seguir el progreso del proyecto.
+Para personalizar tu web y que luzca profesional, necesitas recopilar las siguientes fotografías. He dejado espacios reservados (placeholders) en el código para ellas.
 
-### 🔴 Por Hacer (To Do)
-- [ ] **Compra de Dominio**: Adquirir tu nombre de dominio (ej: `miclinicadental.com`) en Namecheap, GoDaddy o similar.
-- [ ] **Personalización Básica**:
-    - [ ] Editar `index.html` con el nombre real de la clínica.
-    - [ ] Reemplazar los enlaces de WhatsApp e Instagram con los tuyos.
-    - [ ] Actualizar la dirección en el mapa de Google.
-- [ ] **Fotos**:
-    - [ ] Reemplazar las imágenes de ejemplo con fotos reales de tu clínica y equipo (opcional pero recomendado).
+### 1. Identidad
+- [ ] **Logo de la Clínica**: Formato PNG con fondo transparente (idealmente blanco o a color completo).
 
-### 🟡 En Progreso (In Progress)
-- [x] **Estructura del Sitio**: Creación de archivos HTML, CSS y JS (Hecho por tu asistente de IA).
-- [ ] **Revisión de Textos**: Leer y ajustar los textos de "Servicios" y "Nosotros" para que coincidan con tu realidad.
+### 2. Sección "Nosotros" y Equipo
+- [ ] **Foto Grupal del Equipo**: Una foto de alta calidad con los doctores y asistentes sonriendo.
+- [ ] **Fotos de la Clínica**:
+    - [ ] Fachada exterior (para que los pacientes reconozcan el lugar).
+    - [ ] Recepción o sala de espera (para mostrar el ambiente acogedor).
 
-### 🟢 Completado (Done)
-- [x] **Configuración Inicial**: Repositorio creado.
+### 3. Sección "Tecnología" (Calidad)
+Necesitas fotos que demuestren la inversión en calidad:
+- [ ] **Máquina de Blanqueamiento**: Primer plano mostrando el equipo.
+- [ ] **Equipo de Rayos X / Panorámico**: Para mostrar capacidad diagnóstica.
+- [ ] **Ultrasonido**: Foto del equipo de limpieza.
+
+### 4. Sección "Casos de Éxito"
+- [ ] **Casos Antes y Después**:
+    - [ ] Caso 1: Blanqueamiento o Diseño de Sonrisa (Foto Antes vs. Foto Después).
+    - [ ] Caso 2: Implante o rehabilitación compleja.
+    *Nota: Asegúrate de tener el consentimiento de los pacientes para usar estas fotos.*
 
 ---
 
@@ -54,20 +59,16 @@ Una vez que tengas tu dominio comprado:
     - Haz clic en **Save**.
     - Marca la casilla **Enforce HTTPS** (esto tardará un poco en activarse después de guardar).
 
----
-
 ## 🛠️ Estructura del Sitio
 
 El sitio consta de una sola página (Landing Page) optimizada para conversión:
 
 1.  **Inicio (Hero)**: Imagen impactante, frase principal y botón de "Pedir Cita" (WhatsApp).
 2.  **Nosotros**: Breve historia y confianza.
-3.  **Servicios**: Lista de tratamientos (Ortodoncia, Implantes, Blanqueamiento, etc.).
-4.  **Testimonios**: Prueba social de clientes felices.
-5.  **Contacto**:
+3.  **Tecnología**: Muestra tus equipos de vanguardia (Rayos X, Blanqueamiento, Ultrasonido).
+4.  **Servicios**: Lista de tratamientos (Ortodoncia, Implantes, Blanqueamiento, etc.).
+5.  **Casos de Éxito**: Galería de transformaciones reales.
+6.  **Contacto**:
     - Mapa de ubicación.
     - Botones grandes de WhatsApp e Instagram.
     - Teléfono y Horarios.
-
-## 📞 Soporte
-Si necesitas cambiar colores o agregar secciones, pide ayuda a tu asistente de IA o edita el archivo `styles.css`.
