@@ -657,6 +657,49 @@ img {
     .section-header h2 {
         font-size: 2rem;
     }
+
+    /* Mobile Logo adjustment */
+    .logo-img {
+        max-height: 50px; /* Reduce logo size on mobile */
+    }
+    
+    .logo {
+        font-size: 1.2rem; /* Reduce font size */
+        gap: 8px;
+    }
+    
+    .logo-text {
+        font-size: 0.9rem;
+    }
+
+    /* FAQ Mobile */
+    .faq-question {
+        padding: 15px 20px;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+
+    /* Floating Buttons Mobile Optimization */
+    .floating-buttons {
+        bottom: 20px;
+        right: 15px;
+        gap: 10px;
+    }
+
+    .float-btn {
+        width: 45px; /* Smaller size */
+        height: 45px;
+        font-size: 1.2rem;
+        opacity: 0.7; /* Semi-transparent to see content behind */
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .float-btn:hover, .float-btn:active {
+        opacity: 1;
+        transform: scale(1.1);
+    }
 }
 
 /* --- Advanced Features Styles --- */
