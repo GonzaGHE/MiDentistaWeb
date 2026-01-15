@@ -659,3 +659,93 @@ img {
     }
 }
 
+/* --- Advanced Features Styles --- */
+
+/* Scroll Animations */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Micro-interactions: Image Hover Zoom */
+.image-box {
+    overflow: hidden; /* Ensure image stays inside border */
+}
+
+.real-image {
+    transition: transform 0.5s ease;
+}
+
+.image-box:hover .real-image {
+    transform: scale(1.05); /* Subtle zoom */
+}
+
+/* FAQ Section */
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.faq-question {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f8fafc;
+}
+
+.faq-question h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--text-dark);
+}
+
+.faq-question i {
+    color: var(--primary-color);
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f8fafc;
+}
+
+.faq-answer p {
+    padding: 20px 25px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Approximate max height */
+}
+

@@ -51,4 +51,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Advanced Features Logic ---
+
+    // 1. Scroll Animations (Intersection Observer)
+    const observerOptions = {
+        threshold: 0.1, // Trigger when 10% of item is visible
+        rootMargin: "0px 0px -50px 0px" // Offset slightly
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    const animatedElements = document.querySelectorAll('.scroll-reveal');
+    animatedElements.forEach(el => observer.observe(el));
+
+    // 2. FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            // Close other items (optional - accordion style)
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+        });
+    });
+
 });
