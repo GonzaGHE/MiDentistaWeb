@@ -1,14 +1,14 @@
 /* Global Variables */
 :root {
-    --primary-color: #0e7490; /* Teal 700 */
-    --primary-light: #155e75; /* Teal 800 (Hover) */
-    --accent-color: #06b6d4; /* Cyan 500 */
+    --primary-color: #387C85; /* Teal from Logo */
+    --primary-light: #2A6066; /* Darker Teal */
+    --accent-color: #64B5C0; /* Lighter Teal */
     --text-dark: #1e293b; /* Slate 800 */
     --text-light: #64748b; /* Slate 500 */
     --bg-light: #f8fafc; /* Slate 50 */
     --bg-white: #ffffff;
     --bg-dark: #0f172a; /* Slate 900 */
-    --gradient: linear-gradient(135deg, #0e7490 0%, #06b6d4 100%);
+    --gradient: linear-gradient(135deg, #387C85 0%, #64B5C0 100%);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s ease;
@@ -23,6 +23,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -30,6 +31,8 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     background-color: var(--bg-white);
+    overflow-x: hidden; /* Critical for mobile */
+    width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -69,6 +72,7 @@ img {
 /* Typography Helpers */
 .text-gradient {
     background: var(--gradient);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -140,10 +144,24 @@ img {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-dark);
+}
+
+.logo-text {
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.logo-text span {
+    display: block;
+    color: var(--primary-color);
 }
 
 .logo .highlight {
@@ -179,29 +197,88 @@ img {
 /* Hero Section */
 .hero {
     padding: 100px 0;
-    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+    /* Background Image with White/Transparent Overlay */
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.7)), url('images/clinicadental.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
     min-height: 85vh;
     display: flex;
     align-items: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
     max-width: 800px;
+    z-index: 1; /* Ensure content is above background */
+    margin: 0 auto;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
     color: var(--text-dark);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .hero p {
-    font-size: 1.25rem;
-    color: var(--text-light);
-    margin-bottom: 30px;
+    font-size: 1.35rem;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+    font-weight: 500;
 }
 
+/* Enhanced Buttons */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background: var(--gradient);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(56, 124, 133, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(56, 124, 133, 0.4);
+}
+
+.btn-outline {
+    background: white;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    margin-left: 15px; /* Increased margin */
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(56, 124, 133, 0.2);
+}
+
+/* About Section adjustments for better flow */
+.image-box {
+    background-color: transparent; /* Remove background for real images */
+    border: none;
+    box-shadow: var(--shadow-lg); /* Add shadow to images */
+    border-radius: 20px;
+    overflow: hidden;
+}
 /* About Section */
 .about-grid {
     display: grid;
@@ -380,11 +457,48 @@ img {
     color: #cbd5e1;
 }
 
+.logo-img {
+    max-height: 70px;
+    width: auto;
+    display: block;
+}
+
+/* Header Button Correction */
+.nav-link.btn-primary {
+    color: white;
+    padding: 12px 30px !important;
+    border-radius: 50px !important; /* Force rounded corners */
+    display: inline-block;
+    line-height: normal;
+}
+
+.real-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.image-box {
+    background-color: transparent; /* Remove background for real images */
+    border: none;
+}
+/* Ensure borders/radius are kept on the image itself or wrapper if needed */
+.image-box.small, .image-box.medium {
+    overflow: hidden; /* Ensure rounded corners on images */
+}
+
 .social-links-large {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-top: 40px;
+}
+
+/* ... existing social buttons ... */
+
+.float-btn.tiktok {
+    background-color: #000000;
 }
 
 .btn-social {
@@ -412,6 +526,15 @@ img {
 
 .btn-social.instagram:hover {
     opacity: 0.9;
+}
+
+.btn-social.tiktok {
+    background-color: #000000;
+    color: white;
+}
+
+.btn-social.tiktok:hover {
+    background-color: #333333;
 }
 
 .map-container iframe {
@@ -469,12 +592,13 @@ img {
         top: 80px;
         left: 0;
         width: 100%;
-        background: white;
+        background: rgba(255, 255, 255, 0.98); /* Less transparent on mobile */
         flex-direction: column;
         padding: 40px 0;
-        box-shadow: var(--shadow);
+        box-shadow: var(--shadow-lg);
         transform: translateY(-150%);
         transition: var(--transition);
+        gap: 20px;
     }
 
     .nav-list.active {
@@ -483,20 +607,39 @@ img {
 
     .hamburger {
         display: block;
+        color: var(--primary-color);
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem; /* Smaller font on mobile */
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+        padding: 0 10px;
     }
 
     .about-grid, .contact-grid {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
+    
+    /* .about-grid empty rule removed */
 
     .hero-buttons {
         display: flex;
         flex-direction: column;
         gap: 15px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .btn {
+        width: 100%; /* Full width buttons on mobile */
+        margin-left: 0;
+        display: block;
+        box-sizing: border-box;
     }
 
     .btn-outline {
@@ -504,6 +647,15 @@ img {
     }
 
     .section {
-        padding: 50px 0;
+        padding: 60px 0; /* Reduced padding */
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
     }
 }
+
