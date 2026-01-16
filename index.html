@@ -94,6 +94,29 @@
                 </div>
             </div>
         </div>
+
+        <!-- New Specialists Sub-section -->
+        <div class="container specialists-section" style="margin-top: 60px;">
+            <div class="section-header text-center">
+                <h2>Conoce a nuestros especialistas</h2>
+            </div>
+            <div class="specialists-grid">
+                <div class="specialist-card">
+                    <div class="specialist-image">
+                         <img src="images/dra.marleny.quintana.ortodoncista.jpeg" alt="Dra. Marleny Quintana" class="real-image">
+                    </div>
+                    <h3>Dra. Marleny Quintana</h3>
+                    <p class="specialty">Ortodoncia y Estética</p>
+                </div>
+                <div class="specialist-card">
+                    <div class="specialist-image">
+                         <img src="images/javier2.jpeg" alt="Dr. Javier" class="real-image">
+                    </div>
+                    <h3>Dr. Javier</h3>
+                    <p class="specialty">Cirugía e Implantes</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Services Section -->
@@ -134,11 +157,18 @@
             <div class="section-header text-center">
                 <span class="subtitle">Innovación</span>
                 <h2>Tecnología de Vanguardia</h2>
-                <p style="max-width: 700px; margin: 0 auto; color: var(--text-light);">
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-light); text-align: center;">
                     Contamos con equipos de última generación para diagnósticos precisos y tratamientos indoloros.
                 </p>
             </div>
             <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="image-box small">
+                        <img src="images/scanner-intraoral.jpg" alt="Escáner Intraoral" class="real-image">
+                    </div>
+                    <h3>Escáner Intraoral 3D</h3>
+                    <p>Adiós a las pastas de impresión. Moldes digitales precisos y cómodos.</p>
+                </div>
                 <div class="tech-item">
                     <div class="image-box small">
                         <img src="images/blanqueamiento-led.jpg" alt="Blanqueamiento LED" class="real-image">
@@ -148,7 +178,7 @@
                 </div>
                 <div class="tech-item">
                     <div class="image-box small">
-                        <img src="images/rayosx.png" alt="Rayos X Digital" class="real-image">
+                        <img src="images/image-removebg-preview.png" alt="Rayos X Digital" class="real-image" style="background: var(--bg-light); object-fit: contain;">
                     </div>
                     <h3>Rayos X Digitales</h3>
                     <p>Menor radiación y diagnóstico instantáneo de alta resolución.</p>
@@ -165,30 +195,88 @@
     </section>
 
     <!-- Clinical Cases (Before/After) Section -->
+    <!-- Gallery Section -->
     <section id="casos" class="section">
         <div class="container">
             <div class="section-header text-center">
                 <span class="subtitle">Resultados Reales</span>
-                <h2>Transformaciones de Sonrisa</h2>
+                <h2>Galería de Sonrisas</h2>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-light); text-align: center; margin-bottom: 60px;">
+                    Transformamos vidas a través de sonrisas. Explora nuestros casos de éxito.
+                </p>
             </div>
-            <div class="cases-grid">
-                <div class="case-item">
-                    <div class="comparison-container">
+            
+            <!-- Category: Ortodoncia -->
+            <div class="gallery-category">
+                <h3 style="display: flex; align-items: center; gap: 10px;">
+                    <!-- Tooth SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32" height="32" style="color: var(--primary-color);">
+                        <path d="M12 2C7.58 2 4 5.58 4 10v2h16v-2c0-4.42-3.58-8-8-8zm0 2c3.31 0 6 2.69 6 6v2H6v-2c0-3.31 2.69-6 6-6zM4 14v4c0 1.1.9 2 2 2h2v-6H4zm12 0v6h2c1.1 0 2-.9 2-2v-4h-4zM8 20v2h8v-2H8z"/>
+                        <path fill-rule="evenodd" d="M12 2C7.58172 2 4 5.58172 4 10V14.5C4 16.9853 6.01472 19 8.5 19H9V21C9 21.5523 9.44772 22 10 22H14C14.5523 22 15 21.5523 15 21V19H15.5C17.9853 19 20 16.9853 20 14.5V10C20 5.58172 16.4183 2 12 2ZM6 10C6 6.68629 8.68629 4 12 4C15.3137 4 18 6.68629 18 10V12H6V10ZM6 14V13H9V15H8.5C7.11929 15 6 13.8807 6 12.5V14ZM11 15H13V17H11V15ZM15 15V13H18V12.5C18 13.8807 16.8807 15 15.5 15H15ZM9 17V19H10V17H9ZM14 17V19H15V17H14Z" clip-rule="evenodd" opacity="0.2"/> <!-- Added detail -->
+                         <path d="M12 2C8 2 5 5 5 9v4h14V9c0-4-3-7-7-7zM7 11V9c0-2.76 2.24-5 5-5s5 2.24 5 5v2H7z" fill="currentColor"/>
+                    </svg>
+                    Ortodoncia & Invisalign
+                </h3>
+                <div class="gallery-grid cols-3">
+                     <div class="gallery-item">
                         <div class="image-box medium">
-                            <img src="images/antesdespues1.jpg" alt="Antes y Después - Tratamiento 1" class="real-image">
+                            <img src="images/orto_alineadores_invisiline.jpeg" alt="Invisalign" class="real-image">
                         </div>
+                        <p class="gallery-caption">Ortodoncia Invisible</p>
                     </div>
-                    <h3>Diseño de Sonrisa</h3>
-                </div>
-                <div class="case-item">
-                    <div class="comparison-container">
+                    <div class="gallery-item">
                         <div class="image-box medium">
-                            <img src="images/rehabilitacion2.jpeg" alt="Antes y Después - Implante" class="real-image">
+                            <img src="images/brackets.jpeg" alt="Brackets Metálicos" class="real-image">
                         </div>
+                        <p class="gallery-caption">Ortodoncia Tradicional</p>
                     </div>
-                    <h3>Rehabilitación con Implante</h3>
+                    <div class="gallery-item">
+                        <div class="image-box medium">
+                            <img src="images/bracket2.jpeg" alt="Avance Ortodoncia" class="real-image">
+                        </div>
+                        <p class="gallery-caption">Corrección de Mordida</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Category: Estética y Rehabilitación -->
+            <div class="gallery-category" style="margin-top: 40px;">
+                <h3 style="display: flex; align-items: center; gap: 10px;">
+                    <!-- Sparkle/Magic SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32" height="32" style="color: var(--primary-color);">
+                        <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.803 2.61a3 3 0 001.92 1.92l2.61.803a.75.75 0 010 1.446l-2.61.803a3 3 0 00-1.92 1.92l-.803 2.61a.75.75 0 01-1.446 0l-.803-2.61a3 3 0 00-1.92-1.92l-2.61-.803a.75.75 0 010-1.446l2.61-.803a3 3 0 001.92-1.92l.803-2.61A.75.75 0 019 4.5zM15.75 12a.75.75 0 01.75.75v1.179l1.179.362a.75.75 0 010 1.418l-1.18.362v1.18a.75.75 0 01-1.5 0v-1.18l-1.179-.362a.75.75 0 010-1.418l1.18-.362V12.75a.75.75 0 01.75-.75zm5.09-5.152a.75.75 0 01.527.918l-.208.71a2.25 2.25 0 001.328 1.328l.71.208a.75.75 0 010 1.436l-.71.208a2.25 2.25 0 00-1.328 1.328l.208.71a.75.75 0 01-1.436.42l-.208-.71a2.25 2.25 0 00-1.328-1.328l-.71-.208a.75.75 0 010-1.436l.71-.208a2.25 2.25 0 001.328-1.328l-.208-.71a.75.75 0 01.908-.527z" clip-rule="evenodd" />
+                    </svg>
+                    Estética y Rehabilitación
+                </h3>
+                <div class="gallery-grid cols-2">
+                    <div class="gallery-item">
+                        <div class="image-box medium">
+                            <img src="images/carillas.jpeg" alt="Carillas Dentales" class="real-image">
+                        </div>
+                        <p class="gallery-caption">Diseño de Sonrisa con Carillas</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-box medium">
+                            <img src="images/puente-disilicatodelitio-resistente.jpeg" alt="Puente Disilicato" class="real-image">
+                        </div>
+                        <p class="gallery-caption">Puente Disilicato de Litio</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-box medium">
+                            <img src="images/puente-en-zirconio2.jpeg" alt="Puente Zirconio" class="real-image">
+                        </div>
+                        <p class="gallery-caption">Puente de Zirconio</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="image-box medium">
+                            <img src="images/blanqueamiento-paciente.jpeg" alt="Blanqueamiento" class="real-image">
+                        </div>
+                        <p class="gallery-caption">Blanqueamiento Dental</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -204,11 +292,38 @@
             <div class="faq-container scroll-reveal">
                 <div class="faq-item">
                     <div class="faq-question">
+                        <h3>¿Cuál es el costo de la consulta?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>¡Tu primera consulta y diagnóstico son <strong>totalmente gratuitos</strong>! Queremos que conozcas tu estado de salud oral sin compromiso.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cómo puedo agendar una cita?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Es muy sencillo. Puedes reservar tu cita escribiéndonos directamente por <strong>WhatsApp</strong> o llamándonos al <strong>+51 953 636 393</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
                         <h3>¿Aceptan tarjetas de crédito?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
                         <p>Sí, aceptamos todas las tarjetas de crédito y débito (Visa, Mastercard, Amex), efectivo, transferencias, además de <strong>Yape y Plin</strong>.</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Atienden a niños?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>¡Sí! Nos especializamos en odontopediatría. Hacemos que la visita al dentista sea una experiencia divertida y segura para tus hijos.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -218,24 +333,6 @@
                     </div>
                     <div class="faq-answer">
                         <p>Por supuesto. Contamos con un protocolo de atención prioritaria para urgencias dentales. Contáctanos de inmediato por WhatsApp.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Duelen los tratamientos?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Nuestra prioridad es tu comodidad. Usamos anestesia digital y técnicas mínimamente invasivas para garantizar tratamientos sin dolor.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Cuánto dura un blanqueamiento?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>El blanqueamiento LED se realiza en una sola sesión de aproximadamente 45-60 minutos, obteniendo resultados inmediatos.</p>
                     </div>
                 </div>
             </div>
