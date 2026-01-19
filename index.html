@@ -77,21 +77,16 @@
 
     <!-- About Section -->
     <section id="nosotros" class="section about">
-        <div class="container about-grid">
+        <div class="container about-container" style="text-align: center; max-width: 800px;">
             <div class="about-text">
                 <span class="subtitle">Sobre Nosotros</span>
                 <h2>Más que dentistas, somos tu familia dental</h2>
                 <p>Con más de 15 años de experiencia, nuestro equipo de especialistas se dedica a ofrecer tratamientos personalizados con la última tecnología disponible.</p>
-                <ul class="features-list">
+                <ul class="features-list" style="display: inline-block; text-align: left; margin-top: 30px;">
                     <li><i class="fas fa-check-circle"></i> Tecnología Digital 3D</li>
                     <li><i class="fas fa-check-circle"></i> Atención de Urgencia 24/7</li>
                     <li><i class="fas fa-check-circle"></i> Facilidades de Pago</li>
                 </ul>
-            </div>
-            <div class="about-image">
-                <div class="image-box">
-                    <img src="images/equipo.jpg" alt="Equipo Médico" class="real-image">
-                </div>
             </div>
         </div>
 
@@ -100,24 +95,53 @@
             <div class="section-header text-center">
                 <h2>Conoce a nuestros especialistas</h2>
             </div>
-            <div class="specialists-grid">
+            <div class="specialists-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <!-- Dr. Javier Herrera -->
+                <div class="specialist-card">
+                    <div class="specialist-image">
+                         <img src="images/javier2.jpeg" alt="Dr. Javier Herrera" class="real-image">
+                    </div>
+                    <h3>Dr. Javier Herrera del Carmen</h3>
+                    <p class="specialty">Implantes y Rehabilitación Oral</p>
+                    <p class="cop" style="font-size: 0.9em; color: var(--text-light); margin-top: 5px;">COP 51798</p>
+                </div>
+                
+                <!-- Dra. Shirley Moreno -->
+                <div class="specialist-card">
+                    <div class="specialist-image">
+                         <img src="images/shirley-moreno.jpeg" alt="Dra. Shirley Moreno" class="real-image">
+                    </div>
+                    <h3>Dra. Shirley Moreno Banda</h3>
+                    <p class="specialty">Odontopediatría y Estética Dental</p>
+                    <p class="cop" style="font-size: 0.9em; color: var(--text-light); margin-top: 5px;">COP 51150</p>
+                </div>
+
+                <!-- Dra. Marleny Quintana -->
                 <div class="specialist-card">
                     <div class="specialist-image">
                          <img src="images/dra.marleny.quintana.ortodoncista.jpeg" alt="Dra. Marleny Quintana" class="real-image">
                     </div>
-                    <h3>Dra. Marleny Quintana</h3>
+                    <h3>Dra. Marleny Quintana Márquez</h3>
                     <p class="specialty">Ortodoncia y Estética</p>
+                    <p class="cop" style="font-size: 0.9em; color: var(--text-light); margin-top: 5px;">COP 52580</p>
                 </div>
+
+                <!-- Dr. José Alfredo Moreno Meléndez -->
                 <div class="specialist-card">
                     <div class="specialist-image">
-                         <img src="images/javier2.jpeg" alt="Dr. Javier" class="real-image">
+                         <div class="placeholder-icon" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #e0e0e0; border-radius: 50%;">
+                            <i class="fas fa-user-md" style="font-size: 4rem; color: #a0a0a0;"></i>
+                         </div>
                     </div>
-                    <h3>Dr. Javier</h3>
-                    <p class="specialty">Cirugía e Implantes</p>
+                    <h3>Dr. José Alfredo Moreno Meléndez</h3>
+                    <p class="specialty">Odontólogo</p>
+                    <p class="cop" style="font-size: 0.9em; color: var(--text-light); margin-top: 5px;">COP 23598</p>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Services Section -->
     <section id="servicios" class="section services bg-light">
